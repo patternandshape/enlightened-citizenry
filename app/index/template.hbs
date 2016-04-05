@@ -8,8 +8,9 @@
 
 <ul>
   {{#each model.bills as |bill|}}
-    <li>{{bill.bill_id}}</li>
-    <p>Description: {{bill.official_title}}</p>
-    <p>Introduced On: {{bill.introduced_on}}</p>
+  <li>
+    {{#link-to 'bill' bill.bill_id}}{{bill.bill_id}}{{/link-to}}
+    <p>{{bill.official_title}}</p>
+  </li>
   {{/each}}
 </ul>
