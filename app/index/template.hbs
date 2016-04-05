@@ -5,3 +5,11 @@
     <li>{{#link-to 'committee' committee.committee_id}}{{committee.name}}{{/link-to}}</li>
   {{/each}}
 </ul>
+
+<ul>
+  {{#each model.bills as |bill|}}
+    <li>{{bill.bill_id}}</li>
+    <p>Description: {{bill.official_title}}</p>
+    <p>Introduced On: {{bill.introduced_on}}</p>
+  {{/each}}
+</ul>
