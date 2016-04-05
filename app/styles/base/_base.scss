@@ -17,17 +17,16 @@ html {
  */
 *, *::before, *::after {
   box-sizing: inherit;
-} 
+}
 
 /**
  * Basic styles for links
  */
 a {
-  color: $brand-color;
+  color: RoyalBlue;
   text-decoration: none;
-
-  @include on-event {
-    color: $text-color;
-    text-decoration: underline;
+  &:hover {
+    color: $brand-color;
+    text-decoration: none;
   }
 }
