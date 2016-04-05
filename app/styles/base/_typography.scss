@@ -2,6 +2,28 @@
  * Basic typography style for copy text
  */
 body {
-  color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
+  font-family: 'Quicksand', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5em;
+  letter-spacing: 0.05em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: navy;
+}
+
+p {
+  color: white;
+  font-weight: lighter;
 }

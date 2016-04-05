@@ -1,10 +1,8 @@
-
-
 <form>
   <div class="form-group">
-    <label for="zip">Zip</label>
-    {{input value=zip id="zip"}}
+    <h2>Find your Local Legislator</h2>
+    <label for="zip">Zipcode:</label>
+    {{input value=zip id="zip" placeholder="ex: 97211"}}
+    <button class="btn" {{action 'zipLookup'}}>Submit</button>
   </div>
-
-<button class="btn btn-primary" {{action 'zipLookup'}}>Submit</button>
 </form>

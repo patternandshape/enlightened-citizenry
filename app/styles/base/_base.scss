@@ -23,10 +23,17 @@ html {
  * Basic styles for links
  */
 a {
-  color: RoyalBlue;
+  color: maroon;
   text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+
   &:hover {
-    color: $brand-color;
+    color: navy;
     text-decoration: none;
   }
+}
+
+body{
+  background: #6687e7;
 }
