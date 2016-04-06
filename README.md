@@ -8,7 +8,7 @@ April 5, 2016
 
 ### Description
 
-Enlightened Citizenry is a website where the user can look up legislators by zip-code, view the committees and sub-committees  within the House and Senate, view a recent list of bills and their information, see when they are coming up for votes in the House and Senate and see the sponsors of said bills.
+Enlightened Citizenry is a website where the user can look up legislators by zip-code, view the committees and sub-committees  within the House and Senate and view a recent list of bills and their information.
 
 ## Installation
 
@@ -30,6 +30,7 @@ Enlightened Citizenry is a website where the user can look up legislators by zip
 * HTML
 * SCSS
 * Git
+* Google Fonts
 
 ##### License
 

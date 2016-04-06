@@ -1,11 +1,13 @@
+import config from '../config/environment';
 import Ember from 'ember';
 
 export default Ember.Route.extend({
   model: function(params) {
-    var committeeUrl = 'http://congress.api.sunlightfoundation.com/committees?committee_id=' + params.committee_id + '&subcommittee=false&apikey=209a3433698a40978a2a5fb6c519e27e';
+    var key = config.myApiKey;
+    var committeeUrl = 'http://congress.api.sunlightfoundation.com/committees?committee_id=' + params.committee_id + '&subcommittee=false&apikey=' + key;
 
     var subCommitteeUrl =
-    'http://congress.api.sunlightfoundation.com/committees?subcommittee=true&parent_committee_id=' + params.committee_id + '&apikey=209a3433698a40978a2a5fb6c519e27e';
+    'http://congress.api.sunlightfoundation.com/committees?subcommittee=true&parent_committee_id=' + params.committee_id + '&apikey=' + key;
 
     return Ember.RSVP.hash({
       committees: Ember.$.getJSON(committeeUrl).then(function(responseJSON){
