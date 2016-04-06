@@ -1,6 +1,7 @@
 {{lookup-form zipLookup="zipLookup"}}
 
 <h2>Committees</h2>
+
 <ul>
   {{#each model.committees as |committee|}}
     <li>{{#link-to 'committee' committee.committee_id}}{{committee.name}}{{/link-to}}</li>
@@ -8,11 +9,12 @@
 </ul>
 
 <h2>Recent Bills</h2>
+
 <ul>
   {{#each model.bills as |bill|}}
-  <li>
-    {{#link-to 'bill' bill.bill_id}}{{bill.bill_id}}{{/link-to}}
-    <p>{{bill.official_title}}</p>
-  </li>
+    <li>
+      {{#link-to 'bill' bill.bill_id}}{{bill.bill_id}}{{/link-to}}
+      <p>{{bill.official_title}}</p>
+    </li>
   {{/each}}
 </ul>

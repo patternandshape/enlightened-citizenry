@@ -1,9 +1,41 @@
-<h1>{{#each model.bills as |bill|}}{{bill.bill_id}}{{/each}}</h1>
+<h1>
+  {{#each model.bills as |bill|}}
+    {{bill.bill_id}}
+  {{/each}}
+</h1>
 
 <p>Description of bill:</p>
-<p>{{#each model.bills as |bill|}}{{bill.official_title}}{{/each}}</p>
-<p>Sponsor: {{#each model.bills as |bill|}}{{bill.sponsor.title}}. {{bill.sponsor.first_name}}  {{bill.sponsor.last_name}}{{/each}}</p>
-<p>Committee: {{#each model.bills as |bill|}}{{bill.chamber}}{{/each}}</p>
-<p>Date Introduced: {{#each model.bills as |bill|}}{{bill.introduced_on}}{{/each}}</p>
-<p>Link to Congress: {{#each model.bills as |bill|}}<a href={{bill.urls.congress}}>{{bill.urls.congress}}</a>{{/each}}</p>
-<p>Link to Govtrack: {{#each model.bills as |bill|}}<a href={{bill.urls.govtrack}}>{{bill.urls.congress}}</a>{{/each}}</p>
+<p>
+  {{#each model.bills as |bill|}}
+    {{bill.official_title}}
+  {{/each}}
+</p>
+
+<p>Sponsor:
+  {{#each model.bills as |bill|}}
+    {{bill.sponsor.title}}. {{bill.sponsor.first_name}} {{bill.sponsor.last_name}}
+  {{/each}}
+</p>
+
+<p>Committee:
+  {{#each model.bills as |bill|}}
+    {{bill.chamber}}
+  {{/each}}
+</p>
+
+<p>Date Introduced:
+  {{#each model.bills as |bill|}}
+    {{bill.introduced_on}}
+  {{/each}}
+</p>
+
+<p>Link to Congress:
+  {{#each model.bills as |bill|}}
+    <a href={{bill.urls.congress}}>{{bill.urls.congress}}</a>
+    {{/each}}</p>
+
+<p>Link to Govtrack:
+  {{#each model.bills as |bill|}}
+    <a href={{bill.urls.govtrack}}>{{bill.urls.congress}}</a>
+  {{/each}}
+</p>

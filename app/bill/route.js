@@ -7,9 +7,9 @@ export default Ember.Route.extend({
     var billUrl = 'http://congress.api.sunlightfoundation.com/bills?bill_id=' + params.bill_id + '&apikey=' + key;
 
     return Ember.RSVP.hash({
-      bills: Ember.$.getJSON(billUrl).then(function(responseJSON){
-          return responseJSON.results;
-        })
+      bills: Ember.$.getJSON(billUrl).then(function(responseJSON) {
+        return responseJSON.results;
+      })
     });
   }
 });

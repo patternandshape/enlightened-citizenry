@@ -1,6 +1,11 @@
-<h2>Welcome to the {{#each model.committees as |committee|}}{{committee.name}}{{/each}}'s internet hub</h2>
+<h2>Welcome to the
+  {{#each model.committees as |committee|}}
+    {{committee.name}}
+  {{/each}}'s internet hub
+  </h2>
 
 <h3>Here are my subcommittees!</h3>
+
 <ul>
   {{#each model.subcommittees as |subcommittee|}}
     <li>{{subcommittee.name}}</li>
