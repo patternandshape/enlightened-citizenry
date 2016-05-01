@@ -12,7 +12,7 @@ Enlightened Citizenry is a website where the user can look up legislators by zip
 
 ## Installation
 
-* `git clone https://github.com/patternandshape/enlightened-citizenry.git` this repository
+* `git clone https://github.com/patternandshape/enlightened-citizenry.git`
 *   change into the new directory
 * `npm install`
 * `bower install`
@@ -27,9 +27,9 @@ Enlightened Citizenry is a website where the user can look up legislators by zip
 * Node
 * Bower
 * Sunlight Foundation API
+* Git
 * HTML
 * SCSS
-* Git
 * Google Fonts
 
 ##### License
